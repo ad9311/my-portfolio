@@ -1,0 +1,46 @@
+.middleNavbar {
+  margin: 0.75rem auto 1rem auto;
+  max-width: 992px;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.middleNavbarOn {
+  opacity: 1;
+}
+
+.middleNavbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.middleNavbar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.navLink {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.35rem 0.5rem;
+  width: 4.5rem;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.navLink:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
+}
+
+@media screen and (min-width: 768px) {
+  .middleNavbar {
+    text-align: unset;
+  }
+}
