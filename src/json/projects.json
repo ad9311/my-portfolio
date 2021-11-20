@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ad9311/elementos",
+    "name": "Elementos",
+    "description": "Elementos is a web-based application that allows you to explore periodic table elements.",
+    "imgURL": "https://www.wikitechy.com/html/img/slideshow-html/slideshow-in-html.png",
+    "gitHubLink": "https://github.com/ad9311/elementos",
+    "pageURL": "https://ad9311-elementos.netlify.app/"
+  },
+  {
+    "id": "ad9311/css-reductor",
+    "name": "CSS Reductor",
+    "description": "CSS Redcutor is a simple framework sort of like Bootstrap to handle element positioning using css classes. This project does not intend to replace Bootstrap or any major css framework (yet).",
+    "imgURL": "https://www.wikitechy.com/html/img/slideshow-html/slideshow-in-html.png",
+    "gitHubLink": "https://github.com/ad9311/css-reductor",
+    "pageURL": ""
+  },
+  {
+    "id": "ad9311/rtomlcop",
+    "name": "RTomlCop",
+    "description": "RTomlCop is a linter tool built in ruby for toml files. This tool will inspect a toml file and search for errors to display them.",
+    "imgURL": "https://www.wikitechy.com/html/img/slideshow-html/slideshow-in-html.png",
+    "gitHubLink": "https://github.com/ad9311/rtomlcop",
+    "pageURL": ""
+  },
+  {
+    "id": "ad9311/xpens",
+    "name": "XPens",
+    "description": "Xpens is a web application that allows you to save all your expenses and categorize them into folders.",
+    "imgURL": "https://www.wikitechy.com/html/img/slideshow-html/slideshow-in-html.png",
+    "gitHubLink": "https://github.com/ad9311/xpens",
+    "pageURL": "https://xpens-app.herokuapp.com/"
+  }
+]

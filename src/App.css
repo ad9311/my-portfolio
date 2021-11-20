@@ -1,1 +1,27 @@
 /* App.css */
+
+:root {
+  --onyx: #28292a;
+  --powder: #fffffa;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--powder);
+  color: var(--onyx);
+  border-top: 0.25rem solid var(--onyx);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 992px;
+}

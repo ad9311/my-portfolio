@@ -1,0 +1,94 @@
+.header {
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 1rem 2.5rem 1rem;
+  max-width: 992px;
+  opacity: 0;
+  border-bottom: 0.15rem solid var(--onyx);
+  transition: all 0.5s ease-in;
+}
+
+.headerOn {
+  opacity: 1;
+}
+
+.profileContainer {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+
+.profileImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
+}
+
+.profileContainer h2 {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.topIcons {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.topIcons img {
+  margin-right: 0.5rem;
+  width: 1.75rem;
+  transition: all 0.5s ease;
+}
+
+.topIcons img:hover {
+  opacity: 0.9;
+}
+
+.infoContainer {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.infoContainer h2 {
+  display: none;
+}
+
+.contactBtn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 1rem;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.contactBtn:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profileContainer h2 {
+    display: none;
+  }
+
+  .infoContainer {
+    text-align: left;
+  }
+
+  .infoContainer h2 {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
