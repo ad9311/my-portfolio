@@ -12,27 +12,24 @@
   opacity: 1;
 }
 
-.projectBg {
+.myProjects {
   position: relative;
-  margin: auto;
+  height: 15rem;
+}
+
+.projectBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
   background-color: var(--onyx);
-  max-width: 100%;
-  height: 10rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s ease-in;
-}
-
-.projectBg:hover {
-  opacity: 0.9;
-}
-
-.details {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  color: var(--powder);
 }
 
 .name {
@@ -41,6 +38,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--onyx);
+  color: var(--powder);
   font-size: 0.75rem;
 }
 
@@ -51,21 +49,59 @@
 }
 
 .links {
-  opacity: 0;
   height: 0;
   overflow: hidden;
-  transition: all 0.5s ease-in;
+  opacity: 1;
+  background-color: hsla(0, 0%, 75%, 0.75);
+  backdrop-filter: blur(2px);
+  transition: all 0.35s ease-in-out;
 }
 
 .linksOn {
-  opacity: 1;
   height: 100%;
+  opacity: 1;
+}
+
+.desc {
+  padding: 0.5rem;
+}
+
+.desc p {
+  font-size: 1rem;
+}
+
+.linksGroup {
+  padding: 0.5rem;
+}
+
+.linksGroup a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.35rem 0.2rem;
+  width: 3.5rem;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.linksGroup a:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
 }
 
 @media screen and (min-width: 420px) {
-  .projectBg {
-    max-width: 100%;
-    height: 20rem;
+  .desc p {
+    font-size: 1.1rem;
+  }
+
+  .linksGroup a {
+    margin-right: 1rem;
+    padding: 0.35rem 0.35rem;
+    width: 4.5rem;
   }
 }
 
