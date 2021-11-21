@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-// import onClickOutside from 'react-onclickoutside';
 import { selectProject } from '../../redux/projects/projectsSlice';
 import Plus from '../../svg/light/plus.svg';
 import Minus from '../../svg/light/minus.svg';
