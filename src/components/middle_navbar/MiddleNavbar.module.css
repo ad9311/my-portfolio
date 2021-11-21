@@ -1,5 +1,6 @@
 .middleNavbar {
   margin: 0.75rem auto 1rem auto;
+  padding: 0 1rem;
   max-width: 992px;
   opacity: 0;
   text-align: center;
@@ -23,8 +24,8 @@
 .navLink {
   display: inline-block;
   margin-right: 1rem;
-  padding: 0.35rem 0.5rem;
-  width: 4.5rem;
+  padding: 0.35rem 0.2rem;
+  width: 3.5rem;
   background-color: var(--onyx);
   color: var(--powder);
   font-size: 0.85rem;
@@ -39,8 +40,15 @@
   box-shadow: 0 0 0.5rem 0.25rem silver;
 }
 
+@media screen and (min-width: 420px) {
+  .navLink {
+    padding: 0.35rem 0.35rem;
+    width: 4.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .middleNavbar {
-    text-align: unset;
+    text-align: left;
   }
 }
