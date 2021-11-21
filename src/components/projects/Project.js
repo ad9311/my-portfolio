@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
+// import onClickOutside from 'react-onclickoutside';
 import { selectProject } from '../../redux/projects/projectsSlice';
 import Plus from '../../svg/light/plus.svg';
+import Minus from '../../svg/light/minus.svg';
 import style from './Projects.module.css';
 
 const Project = (props) => {
@@ -33,7 +35,8 @@ const Project = (props) => {
     <article id={fmtID}>
       <div className={style.myProjects}>
         <div style={projectBg} className={style.projectBg}>
-          <div className={
+          <div
+            className={
             selected !== fmtID
               ? style.links
               : `${style.links} ${style.linksOn}`
@@ -54,7 +57,15 @@ const Project = (props) => {
               className={style.moreBtn}
               onClick={moreHandle}
             >
-              <img src={Plus} alt="more" />
+              <img
+                id={fmtID}
+                src={
+                  selected === fmtID
+                    ? Minus
+                    : Plus
+                }
+                alt="more"
+              />
             </button>
           </div>
         </div>

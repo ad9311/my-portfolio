@@ -6,9 +6,13 @@ import INSVG from '../../svg/dark/linkedin.svg';
 
 const Header = () => {
   const [show, setShow] = useState(false);
+
   useEffect(() => {
-    setTimeout(() => setShow(true), 150);
+    if (!show) {
+      setTimeout(() => setShow(true), 150);
+    }
   }, []);
+
   return (
     <header className={
       show
@@ -32,7 +36,7 @@ const Header = () => {
       <div className={style.infoContainer}>
         <h2>Ángel D.R.</h2>
         <h1>Full Stack Developer</h1>
-        <a href="http//:localhost:4000">
+        <a href="/">
           <button className={style.contactBtn} type="button">
             Let&apos;s Work Together
           </button>
