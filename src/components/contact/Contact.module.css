@@ -1,0 +1,41 @@
+.contact input,
+textarea {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 0.01rem solid var(--onyx);
+  outline: none;
+  transition: all 0.5s;
+}
+
+.contact input {
+  width: 20rem;
+  height: 2rem;
+}
+
+.contact input:hover,
+textarea:hover {
+  box-shadow: 0 0 0.8rem 0.25rem silver;
+}
+
+.contact textarea {
+  width: 20rem;
+  height: 10rem;
+  resize: none;
+}
+
+.contact button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 1rem;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.contact button:hover {
+  opacity: 0.95;
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
+}

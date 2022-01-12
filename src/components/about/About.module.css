@@ -1,0 +1,30 @@
+.about {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.aboutOn {
+  opacity: 1;
+}
+
+.text {
+  max-width: 80%;
+}
+
+.text p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.skills h3 {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.skills ul {
+  margin: 0;
+  padding: 0;
+}
+
+.skills li {
+  list-style: none;
+}
