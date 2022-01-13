@@ -1,8 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
 import projectsSlice from './projects/projectsSlice';
 
-const combineMiddleware = [logger];
+const combineMiddleware = [];
 
 const reducer = combineReducers(
   {

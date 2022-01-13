@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import style from './Contact.module.css';
 
 function Contact() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 250);
+  }, []);
+
   const [state, handleSubmit] = useForm('xvolzolv');
   if (state.succeeded) {
     return <p>Thanks for contacting me. I&apos;ll respond your request as soon as possible.</p>;
   }
   return (
-    <form onSubmit={handleSubmit} className={style.contact}>
+    <form
+      onSubmit={handleSubmit}
+      className={show ? `${style.contactOn} ${style.contact}` : style.contact}
+    >
       <label htmlFor="name">
         <input
           id="name"
@@ -48,7 +56,10 @@ function Contact() {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      <button
+        type="submit"
+        disabled={state.submitting}
+      >
         Submit
       </button>
     </form>

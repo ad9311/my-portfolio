@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { selectProject, updateTarget } from '../../redux/projects/projectsSlice';
 import style from './Header.module.css';
 import EMSVG from '../../svg/dark/email.svg';
@@ -43,19 +44,19 @@ const Header = () => {
         />
         <h2>Ángel D.R.</h2>
         <div className={style.topIcons}>
-          <a href="/"><img src={EMSVG} alt="email" /></a>
-          <a href="/"><img src={GHSVG} alt="github" /></a>
-          <a href="/"><img src={INSVG} alt="linkedin" /></a>
+          <NavLink to="/contact"><img src={EMSVG} alt="email" /></NavLink>
+          <a href="https://github.com/ad9311"><img src={GHSVG} alt="github" /></a>
+          <a href="https://www.linkedin.com/in/ad9311/"><img src={INSVG} alt="linkedin" /></a>
         </div>
       </div>
       <div className={style.infoContainer}>
         <h2>Ángel D.R.</h2>
         <h1>Full Stack Developer</h1>
-        <a href="/">
+        <NavLink to="/contact">
           <button className={style.contactBtn} type="button">
             Let&apos;s Work Together
           </button>
-        </a>
+        </NavLink>
       </div>
     </header>
   );

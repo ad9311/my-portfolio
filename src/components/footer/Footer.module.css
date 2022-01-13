@@ -1,7 +1,5 @@
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 2rem 1rem;
   background-color: var(--onyx);
   color: var(--powder);
 }
