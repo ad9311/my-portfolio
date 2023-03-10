@@ -1,17 +1,11 @@
-import HomeHeader from '../containers/home';
+import HomeHeader, { StackInfo } from '../containers/home';
 
 function Home() {
   return (
-    <>
+    <div className="grid grid-rows-2 gap-20">
       <HomeHeader />
-      <section>
-        <h3>What I do</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur in quam voluptatibus
-          non?
-        </p>
-      </section>
-    </>
+      <StackInfo />
+    </div>
   );
 }
 

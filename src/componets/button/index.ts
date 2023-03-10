@@ -1,6 +1,3 @@
-import ButtonPrimary from './ButtonPrimary';
-import ButtonSecondary from './ButtonSecondary';
+import MainButton from './MainButton';
 
-export { ButtonSecondary };
-
-export default ButtonPrimary;
+export default MainButton;
