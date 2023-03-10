@@ -48,6 +48,14 @@
 		"semi": [
 			"error",
 			"always"
-		]
+		],
+		"react/react-in-jsx-scope": "off",
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+		"camelcase": "error",
+		"spaced-comment": "error",
+		"no-duplicate-imports": "error",
+		"no-debugger": "warn",
+		"@typescript-eslint/no-explicit-any": "error"
 	}
 }
