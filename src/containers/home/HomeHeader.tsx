@@ -6,7 +6,11 @@ function HomeHeader() {
   return (
     <header className="px-3 pt-3 pb-10 border-b border-slate-200 lg:pt-10 lg:px-10 bg-neutral-100">
       <div className="block mb-10  md:hidden">
-        <img className="w-44 rounded-md" src="https://via.placeholder.com/700x700.jpeg" alt="ange-diaz" />
+        <img
+          className="w-44 rounded-md"
+          src="https://via.placeholder.com/700x700.jpeg"
+          alt="ange-diaz"
+        />
       </div>
       <div className="block md:grid grid-cols-2">
         <div>
@@ -20,10 +24,20 @@ function HomeHeader() {
           <nav>
             <ul className="flex flex-col sm:flex-row">
               <li className="mb-3 sm:mr-3 sm:mb-0">
-                <MainButton link="/" text="View portfolio" icon={appIcons.arrow} bgColor="BLUE" />
+                <MainButton
+                  link="/portfolio"
+                  text="View portfolio"
+                  icon={appIcons.arrow}
+                  bgColor="BLUE"
+                />
               </li>
               <li>
-                <MainButton link="/" text="View resume" icon={appIcons.doc} bgColor="NEUTRAL" />
+                <MainButton
+                  link="/resume"
+                  text="View resume"
+                  icon={appIcons.doc}
+                  bgColor="NEUTRAL"
+                />
               </li>
             </ul>
           </nav>
