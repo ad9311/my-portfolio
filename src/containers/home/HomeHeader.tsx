@@ -4,7 +4,7 @@ import MainButton from '../../componets/button';
 
 function HomeHeader() {
   return (
-    <header>
+    <header className="px-3 pt-3 bg-neutral-100">
       <div className="block mb-10  md:hidden">
         <img className="w-44" src="https://via.placeholder.com/700x700.jpeg" alt="ange-diaz" />
       </div>
@@ -29,7 +29,11 @@ function HomeHeader() {
           </nav>
         </div>
         <div className="hidden md:flex justify-center items-center">
-          <img className="w-52 h-52 rounded-md" src="https://via.placeholder.com/700x700.jpeg" alt="ange-diaz" />
+          <img
+            className="w-52 h-52 rounded-md"
+            src="https://via.placeholder.com/700x700.jpeg"
+            alt="ange-diaz"
+          />
         </div>
       </div>
     </header>

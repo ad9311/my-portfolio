@@ -10,7 +10,7 @@ function StackInfo() {
   ));
 
   return (
-    <section>
+    <section className="mx-3">
       <div className="pl-3 border-l-8 border-blue-600">
         <h2 className="text-2xl font-bold">What I do</h2>
       </div>

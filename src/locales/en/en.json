@@ -1,4 +1,10 @@
 {
+	"pages": {
+		"about": "About me",
+		"portfolio": "Portfolio",
+		"resume": "Resume",
+		"contact": "Contact"
+	},
 	"common": {},
 	"containers": {
 		"home": {
