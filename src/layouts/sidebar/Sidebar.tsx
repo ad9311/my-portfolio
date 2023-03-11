@@ -65,7 +65,7 @@ function Sidebar(props: SidebarProps) {
   return (
     <div
       className={`pt-10 px-3 bg-blue-700 ${
-        props.type === 'MENU' ? 'max-w-sm rounded-tr-md rounded-br-md shadow-4' : 'h-[100vh]'
+        props.type === 'MENU' ? 'max-w-[17.7rem] rounded-md shadow-4' : 'h-[100vh]'
       }`}>
       <p className="text-center text-white">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, dolor molestias? Neque

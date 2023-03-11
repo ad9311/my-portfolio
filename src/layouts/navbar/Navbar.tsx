@@ -14,8 +14,8 @@ function Navbar() {
       </div>
       <div className="relative block lg:hidden">
         <div
-          className={`absolute top-0 ${
-            open ? 'left-0' : '-left-full'
+          className={`absolute top-3 ${
+            open ? 'left-3' : '-left-full'
           } w-full transition-all ease-in-out duration-300`}>
           <Sidebar type="MENU" />
         </div>
