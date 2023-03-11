@@ -1,4 +1,14 @@
+import { findIcon } from '../../assets/img/icons';
+
+const stack = ['css3', 'html5', 'js', 'psql', 'rails', 'react', 'redux', 'ruby', 'sass', 'ts'];
+
 function StackInfo() {
+  const mapStack = stack.map(item => (
+    <li key={item}>
+      <img className="w-10 md:w-20" src={findIcon(item)} alt={item} />
+    </li>
+  ));
+
   return (
     <section>
       <div className="pl-3 border-l-8 border-blue-600">
@@ -8,6 +18,7 @@ function StackInfo() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste culpa aliquid dicta
         explicabo fuga expedita totam perspiciatis porro ducimus?
       </p>
+      <ul className="mt-5 flex flex-wrap justify-between">{mapStack}</ul>
     </section>
   );
 }

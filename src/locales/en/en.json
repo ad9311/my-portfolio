@@ -1,0 +1,10 @@
+{
+	"common": {},
+	"containers": {
+		"home": {
+			"fullStackDeveloper": "Full-stack web developer"
+		},
+    "stack": {
+    }
+	}
+}
