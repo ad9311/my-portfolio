@@ -1,6 +1,7 @@
 import { t } from 'i18next';
 import { NavLink } from 'react-router-dom';
 import appIcons from '../../assets/img/icons';
+import SidebarProps from '../../types/sidebar';
 
 const socialMediaLinks = [
   {
@@ -11,7 +12,7 @@ const socialMediaLinks = [
   {
     link: 'https://linkedin.com/in/ad9311',
     icon: appIcons.linkedin,
-    name: 'github',
+    name: 'linkedin',
   },
   {
     link: 'https://twitter.com',
@@ -47,9 +48,9 @@ const sidebarLinks = [
   },
 ];
 
-function Sidebar() {
+function Sidebar(props: SidebarProps) {
   const mapSMLinks = socialMediaLinks.map(item => (
-    <li key={item.name} className="w-fit mx-auto">
+    <li key={`${props.type}-${item.name}`} className="w-fit mx-auto">
       <a href={item.link} target="_blank" rel="noreferrer">
         <img className="w-10" src={item.icon} alt={item.name} />
       </a>
@@ -57,7 +58,7 @@ function Sidebar() {
   ));
 
   const mapSidebarLinks = sidebarLinks.map(item => (
-    <li key={item.name} className="mb-3">
+    <li key={`${props.type}-${item.name}`} className="mb-3">
       <NavLink
         to={item.link}
         className={({ isActive }) =>
@@ -70,7 +71,10 @@ function Sidebar() {
   ));
 
   return (
-    <div className="pt-10 px-3 bg-blue-700 max-w-sm">
+    <div
+      className={`pt-10 px-3 bg-blue-700 ${
+        props.type === 'MENU' ? 'max-w-sm rounded-tr-md rounded-br-md' : 'sticky h-full top-0 left-0 bottom-0'
+      }`}>
       <p className="text-center text-white">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, dolor molestias? Neque
         commodi odit nesciunt velit.

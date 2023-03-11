@@ -17,7 +17,7 @@ function Navbar() {
           className={`absolute top-0 ${
             open ? 'left-0' : '-left-full'
           } w-full transition-all ease-in-out duration-300`}>
-          <Sidebar />
+          <Sidebar type="MENU" />
         </div>
       </div>
     </>
