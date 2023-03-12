@@ -16,6 +16,7 @@ import redux from './redux.svg';
 import ruby from './ruby.svg';
 import sass from './sass.svg';
 import suitcase from './suitcase.svg';
+import tailwindcss from './tailwindcss.svg';
 import ts from './ts.svg';
 import twitter from './twitter.svg';
 
@@ -38,6 +39,7 @@ const appIcons = {
   ruby,
   sass,
   suitcase,
+  tailwindcss,
   ts,
   twitter,
 };

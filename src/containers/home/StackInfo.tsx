@@ -1,13 +1,13 @@
-import { findIcon } from '../../assets/img/icons';
+// import { findIcon } from '../../assets/img/icons';
 
-const stack = ['css3', 'html5', 'js', 'psql', 'rails', 'react', 'redux', 'ruby', 'sass', 'ts'];
+// const stack = ['css3', 'html5', 'js', 'psql', 'rails', 'react', 'redux', 'ruby', 'sass', 'ts', 'tailwindcss'];
 
 function StackInfo() {
-  const mapStack = stack.map(item => (
-    <li key={item}>
-      <img className="w-10 md:w-20" src={findIcon(item)} alt={item} />
-    </li>
-  ));
+  // const mapStack = stack.map(item => (
+  //   <li key={item} className="p-1 md:p-3 w-10 md:w-24 border border-neutral-500 rounded-md">
+  //     <img src={findIcon(item)} alt={item} />
+  //   </li>
+  // ));
 
   return (
     <section className="px-3 pt-3 lg:pt-10 lg:px-10">
@@ -18,7 +18,7 @@ function StackInfo() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste culpa aliquid dicta
         explicabo fuga expedita totam perspiciatis porro ducimus?
       </p>
-      <ul className="mt-5 flex flex-wrap justify-between">{mapStack}</ul>
+      {/* <ul className="mt-5">{mapStack}</ul> */}
     </section>
   );
 }
