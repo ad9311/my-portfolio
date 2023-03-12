@@ -6,7 +6,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div className="sticky top-0">
       <div className="p-3 flex items-center lg:hidden bg-blue-600">
         <button type="button" onClick={() => setOpen(prev => !prev)}>
           <img className="w-6" src={appIcons.menu} alt="menu" />
@@ -20,7 +20,7 @@ function Navbar() {
           <Sidebar type="MENU" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

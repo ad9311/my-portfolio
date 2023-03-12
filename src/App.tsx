@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './config/i18n';
 import './assets/css/app.css';
 import Navbar from './layouts/navbar';
-import Home from './pages';
 import Sidebar from './layouts/sidebar';
+import Home, { Portfolio } from './pages';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <main className="col-span-9">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Home />} />
             <Route path="/contact" element={<Home />} />
           </Routes>
