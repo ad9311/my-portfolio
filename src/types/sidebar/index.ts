@@ -1,5 +1,6 @@
 interface SidebarProps {
   type: 'MENU' | 'SIDEBAR';
+  callback?: () => void;
 }
 
 export interface SidebarNavLinkProps {
@@ -7,6 +8,7 @@ export interface SidebarNavLinkProps {
   icon: string;
   name: string;
   text: string;
+  callback?: () => void;
 }
 
 export interface SidebarIconLinkProps {

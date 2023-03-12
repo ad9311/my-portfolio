@@ -6,7 +6,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-50">
       <div className="p-3 flex items-center lg:hidden bg-blue-600">
         <button type="button" onClick={() => setOpen(prev => !prev)}>
           <img className="w-6" src={appIcons.menu} alt="menu" />
@@ -17,7 +17,12 @@ function Navbar() {
           className={`absolute top-3 ${
             open ? 'left-3' : '-left-full'
           } w-full transition-all ease-in-out duration-300`}>
-          <Sidebar type="MENU" />
+          <Sidebar
+            type="MENU"
+            callback={() => {
+              setOpen(false);
+            }}
+          />
         </div>
       </div>
     </div>

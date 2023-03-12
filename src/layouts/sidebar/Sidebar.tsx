@@ -58,7 +58,7 @@ function Sidebar(props: SidebarProps) {
 
   const mapnavLinks = navLinks.map(item => (
     <li key={`${props.type}-${item.name}`} className="mb-3">
-      <SidebarNavLink {...item} />
+      <SidebarNavLink {...item} callback={props.type === 'MENU' ? props.callback : undefined} />
     </li>
   ));
 
